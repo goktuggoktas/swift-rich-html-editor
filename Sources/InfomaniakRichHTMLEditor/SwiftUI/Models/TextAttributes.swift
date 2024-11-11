@@ -32,6 +32,8 @@ public final class TextAttributes: ObservableObject {
 
     @Published public private(set) var fontName = ""
     @Published public private(set) var fontSize: Int?
+    @Published public private(set) var formatBlock = ""
+
 
     @Published public private(set) var foregroundColor: Color?
     @Published public private(set) var backgroundColor: Color?
@@ -55,8 +57,9 @@ public final class TextAttributes: ObservableObject {
 
         fontName = uiTextAttributes.fontName
         fontSize = uiTextAttributes.fontSize
-
-        if let uiForegroundColor = uiTextAttributes.foregroundColor {
+        formatBlock = uiTextAttributes.formatBlock
+        
+      if let uiForegroundColor = uiTextAttributes.foregroundColor {
             foregroundColor = Color(uiForegroundColor)
         } else {
             foregroundColor = nil

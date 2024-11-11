@@ -38,4 +38,5 @@ enum ExecCommand: String, CaseIterable {
     case redo
     case indent
     case outdent
+    case formatBlock
 }

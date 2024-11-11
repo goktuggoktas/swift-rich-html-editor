@@ -20,6 +20,7 @@ const stateCommands = {
 const valueCommands = {
     fontName: "fontName",
     rawFontSize: "fontSize",
+    formatBlock: "formatBlock",
     rawForegroundColor: "foreColor",
     rawBackgroundColor: "backColor"
 };

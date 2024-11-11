@@ -118,6 +118,11 @@ public extension TextAttributes {
     func setFontSize(_ size: Int) {
         editor?.setFontSize(size)
     }
+  
+  
+    func setFormatBlock(_ block: String) {
+      editor?.formatBlock(block: block)
+    }
 
     /// Undoes the last executed command.
     func undo() {

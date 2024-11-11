@@ -60,6 +60,10 @@ public extension RichHTMLEditorView {
     func unorderedList() {
         execCommand(.unorderedList)
     }
+  
+    func formatBlock(block: String) {
+      execCommand(.formatBlock, argument: block);
+    }  
 
     /// Creates a new link for the current selection or at the insertion point.
     ///
